@@ -94,7 +94,7 @@ def dailyFudan(uid, psw, uname, pwd, info, lc_s_sfzx=None):
     if lc_s_sfzx:
         s_sfzx = lc_s_sfzx
     else:
-        s_sfzx = lambda x: "1"
+        s_sfzx = lambda x: "0"
     vpn = WebVPN()
     try:
         if 'token-login' not in vpn.login(uid, psw):
